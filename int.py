@@ -39,7 +39,7 @@ while cnt < 100:
 	ssa = (ss*100)/(len(k)*len(k[0]))
 	#print("Pixel Error ",ssa)
 	sum1 = sum1 + ssa
-	print(cnt,".png : "ssa)
+	print(cnt,".png : ",ssa)
 
 	cv2.waitKey(0) 
 	cv2.destroyAllWindows()
