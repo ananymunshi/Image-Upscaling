@@ -25,7 +25,7 @@ while cnt < 100:
 
 	while j < len(img2):
 		while i < len(img2[0]):
-			ss = ss + math.sqrt(((k[j][i][0]*k[j][i][0])+(k[j][i][1]*k[j][i][1])+(k[j][i][2]+k[j][i][2]))/3)
+			ss = ss + math.sqrt(((int(k[j][i][0])*int(k[j][i][0]))+(int(k[j][i][1])*int(k[j][i][1]))+(int(k[j][i][2])+int(k[j][i][2])))/3)
 			#print(math.sqrt(((k[j][i][0]*k[j][i][0])+(k[j][i][1]*k[j][i][1])+(k[j][i][2]+k[j][i][2]))/3))
 			
 			i += 1
@@ -49,7 +49,7 @@ while cnt < 100:
 print("Total Error Percentage Average :",sum1/100)
 #cv2.imshow("img",bwk)
 #print(li)
-li.sort()
+#li.sort()
 plt.plot(li)
 plt.show()
 
