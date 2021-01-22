@@ -7,6 +7,7 @@ import math
 
 sum1 = 0
 cnt = 0
+li = []
 
 while cnt < 100:
 
@@ -39,14 +40,19 @@ while cnt < 100:
 	ssa = (ss*100)/(len(k)*len(k[0]))
 	#print("Pixel Error ",ssa)
 	sum1 = sum1 + ssa
-	print(cnt,".png : ",ssa)
-
+	#print(cnt,".png : ",ssa)
+	li.append(ssa)
 	cv2.waitKey(0) 
 	cv2.destroyAllWindows()
 	cnt += 1
 
 print("Total Error Percentage Average :",sum1/100)
 #cv2.imshow("img",bwk)
+#print(li)
+li.sort()
+plt.plot(li)
+plt.show()
+
 
 cv2.waitKey(0) 
 cv2.destroyAllWindows()
