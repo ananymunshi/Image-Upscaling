@@ -47,7 +47,7 @@ while cnt < 100:
 	cv2.destroyAllWindows()
 	cnt += 1
 
-print("Total Error Percentage Average :",sum1/100)
+print("Total Error Percentage Average :",sum1/(cnt+1))
 #cv2.imshow("img",bwk)
 #print(li)
 li.sort()
