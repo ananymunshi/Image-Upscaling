@@ -35,31 +35,31 @@ ButtonImg6 = PhotoImage(file='Images/pixel.png')
 ButtonImg7 = PhotoImage(file='Images/ShowAll.png')
 
 # Image Upload function
-Button01 = Button(root, image=ButtonImg1, borderwidth=0, bg="#333333", command=fileopener_img)
+Button01 = Button(root, image=ButtonImg1, borderwidth=0, bg="#333333", command=fileopener_img, activebackground="#333333")
 Button01.grid(row=0, column=0, padx=10, pady=10)
 
-Button02 = Button(root, image=ButtonImg1, borderwidth=0, bg="#333333", command=fileopener_ref)
+Button02 = Button(root, image=ButtonImg1, borderwidth=0, bg="#333333", command=fileopener_ref, activebackground="#333333")
 Button02.grid(row=0, column=1, padx=10, pady=10)
 
 # bicubic interpolation method 
-Button2 = Button(root, image=ButtonImg2, bg="#333333", borderwidth=0, command=lambda: main_function(file_name1, file_name2, 0))
+Button2 = Button(root, image=ButtonImg2, bg="#333333", borderwidth=0, command=lambda: main_function(file_name1, file_name2, 0), activebackground="#333333")
 Button2.grid(row=1, column=0, padx=5, pady=10)
 
-Button3 = Button(root, image=ButtonImg3, bg="#333333", borderwidth=0, command=lambda: main_function(file_name1, file_name2, 1))
+Button3 = Button(root, image=ButtonImg3, bg="#333333", borderwidth=0, command=lambda: main_function(file_name1, file_name2, 1), activebackground="#333333")
 Button3.grid(row=1, column=1, padx=5, pady=10)
 
-Button4 = Button(root, image=ButtonImg4, bg="#333333", borderwidth=0, command=lambda: main_function(file_name1, file_name2, 2))
+Button4 = Button(root, image=ButtonImg4, bg="#333333", borderwidth=0, command=lambda: main_function(file_name1, file_name2, 2), activebackground="#333333")
 Button4.grid(row=2, column=0, padx=5, pady=10)
 
-Button5 = Button(root, image=ButtonImg5, bg="#333333", borderwidth=0, command=lambda: main_function(file_name1, file_name2, 3))
+Button5 = Button(root, image=ButtonImg5, bg="#333333", borderwidth=0, command=lambda: main_function(file_name1, file_name2, 3), activebackground="#333333")
 Button5.grid(row=2, column=1, padx=5, pady=10)
 
-Button6 = Button(root, image=ButtonImg6, bg="#333333", borderwidth=0, command=lambda: main_function(file_name1, file_name2, 4))
-Button6.grid(row=3, column=0, padx=5, pady=10)
+# Button6 = Button(root, image=ButtonImg6, bg="#333333", borderwidth=0, command=lambda: main_function(file_name1, file_name2, 4), activebackground="#333333")
+# Button6.grid(row=3, column=0, columnspan=2, padx=5, pady=10)
 
 # Button That executes all functions
-Button7 = Button(root, image=ButtonImg7, bg="#333333", borderwidth=0)
-Button7.grid(row=3, column=1, padx=5, pady=10)
+# Button7 = Button(root, image=ButtonImg7, bg="#333333", borderwidth=0, command=lambda: main_function(file_name1, file_name2, 4)activebackground="#333333")
+# Button7.grid(row=3, column=1, padx=5, pady=10)
 
 # Event Loop
 root.mainloop()
